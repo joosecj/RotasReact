@@ -1,4 +1,5 @@
-import HomeCard from "../../../components/Header/HomeCard";
+import CategoryMenu from "../../../components/CategoryMenu";
+import HomeCard from "../../../components/HomeCard";
 
 export default function HomeBody() {
   return (
