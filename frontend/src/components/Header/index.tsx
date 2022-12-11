@@ -19,7 +19,6 @@ export default function Header() {
         <div className='image-header'>
           <img src={imgHome} alt="Home" />
         </div>
-
       </div>
     </header >
   );
