@@ -1,3 +1,4 @@
+import { ProductDTO } from './../models/product';
 import { CategoryDTO } from './../models/category';
 
 export function findAll(): CategoryDTO[] {
@@ -6,6 +7,10 @@ export function findAll(): CategoryDTO[] {
 
 export function findById(id: number) : CategoryDTO | undefined {
   return categories.find(x => x.id === id);
+}
+
+export function productByCategory(id: number): ProductDTO[] {
+  return findAll().filter(x => findById(x.id))
 }
 
 

@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom';
 import CategoryMenu from '../../../components/CategoryMenu';
 import * as categoryService from '../../../services/category-service';
 import './styles.css';
@@ -14,6 +15,7 @@ export default function Category() {
           }
         </div>
       </section>
+      <Outlet />
     </main>
   );
 }
