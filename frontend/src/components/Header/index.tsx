@@ -1,23 +1,26 @@
 import './styles.css';
 import imgHome from '../../assets/home.png';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
     <header>
       <div className='header-content-container container'>
         <nav className='navbar'>
-          <div className='items-menu'>
+          <NavLink to="/" className='items-menu'>
             Início
-          </div>
-          <div className='items-menu'>
+          </NavLink>
+          <NavLink to="/products" className='items-menu'>
             Produtos
-          </div>
-          <div className='items-menu'>
+          </NavLink>
+          <NavLink to="/about" className='items-menu'>
             Sobre nós
-          </div>
+          </NavLink>
         </nav>
         <div className='image-header'>
-          <img src={imgHome} alt="Home" />
+          <NavLink to="/">
+            <img src={imgHome} alt="Home" />
+          </NavLink>
         </div>
       </div>
     </header >

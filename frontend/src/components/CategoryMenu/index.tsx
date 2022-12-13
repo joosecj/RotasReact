@@ -8,10 +8,11 @@ type Props = {
 
 export default function CategoryMenu({ category }: Props) {
   return (
-    <Link to={`/${category.name}/${category.id}`}>
+    
       <div className='category-menu'>
         {category.name}
       </div>
-    </Link>
+    
+
   );
 }

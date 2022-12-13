@@ -1,10 +1,9 @@
-import CategoryMenu from "../../../components/CategoryMenu";
 import HomeCard from "../../../components/HomeCard";
 
 export default function HomeBody() {
   return (
-    <main>
-      <section className="container">
+    <main className="container">
+      <section className="card-home-section">
         <HomeCard title="Bem Vindo!" />
       </section>
     </main>
