@@ -7,13 +7,13 @@ export default function Header() {
     <header>
       <div className='header-content-container container'>
         <nav className='navbar'>
-          <NavLink to="/" className='items-menu'>
+          <NavLink to="/home" className={({ isActive }) => isActive ? 'items-menu menu-active' : 'items-menu'} >
             Início
           </NavLink>
-          <NavLink to="/products" className='items-menu'>
+          <NavLink to="/products" className={({ isActive }) => isActive ? 'items-menu menu-active' : 'items-menu'} >
             Produtos
           </NavLink>
-          <NavLink to="/about" className='items-menu'>
+          <NavLink to="/about" className={({ isActive }) => isActive ? 'items-menu menu-active' : 'items-menu'} >
             Sobre nós
           </NavLink>
         </nav>
@@ -23,6 +23,6 @@ export default function Header() {
           </NavLink>
         </div>
       </div>
-    </header >
+    </header>
   );
 }

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { CategoryDTO } from '../../models/category';
 import './styles.css';
 
@@ -8,11 +7,8 @@ type Props = {
 
 export default function CategoryMenu({ category }: Props) {
   return (
-    
-      <div className='category-menu'>
-        {category.name}
-      </div>
-    
-
+    <div className='category-menu'>
+      {category.name}
+    </div>
   );
 }

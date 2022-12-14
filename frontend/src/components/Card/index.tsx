@@ -4,7 +4,7 @@ type Props = {
   title: string;
 }
 
-export default function HomeCard({ title }: Props) {
+export default function Card({ title }: Props) {
   return (
     <div className='card-home'>
       {title}

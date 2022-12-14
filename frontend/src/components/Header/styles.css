@@ -18,3 +18,7 @@ header {
   font-weight: 400;
   color: var(--text-primary-menu);
 }
+
+.menu-active {
+  font-weight: 700;
+}
